@@ -174,3 +174,5 @@ Feel free to ping [@stackrole](stackrole) for help regarding your JAMstack websi
 [stackrole]: https://stackrole.com
 [twitter]: https://twitter.com/stackrole
 [custom-domain]: https://stackrole.com/adding-custom-domain-netlify
+#   g a t s b y - s t a r t e r - f o u n d a t i o n - v 2  
+ 
