@@ -2,7 +2,7 @@
 template: index-page
 slug: /
 title: Hi, I’m Jason and I like turning 📈 into 💎
-tagline: "> *“Sometimes I VLOOKUP at the *s to find a scatterplot staring back at me.”*"
+tagline: “Sometimes I VLOOKUP at the *s to find a scatterplot staring back at me.”
 featuredImage: /assets/linkedin-cover-photo.png
 cta:
   ctaText: Know more
