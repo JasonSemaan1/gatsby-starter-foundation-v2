@@ -1,11 +1,19 @@
 import styles from '../styles/Home.module.css'
+import supabase from '../utils/supabase';
 
-export function getStaticProps() {
+export async function getStaticProps() {
+  const { data: scrabble_sql, error } = await supabase
+  .from('scrabble_sql').select('Actual_Word', 'Value')
+
+  if (error) {
+      throw new Error(error);
+  }
+  
   return {
     props: {
-    scrabble_sql: [],
+    scrabble_sql,
     }
-  }
+  };
 }
 
 export default function Home({ scrabble_sql }) {
