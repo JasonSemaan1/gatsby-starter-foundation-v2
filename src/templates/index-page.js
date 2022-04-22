@@ -18,6 +18,7 @@ import {
   RiDribbbleFill,
   RiMediumFill,
   RiBehanceFill,
+  SiTableau,
 } from "react-icons/ri"
 import { FaWordpress, FaVk } from "react-icons/fa"
 
