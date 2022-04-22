@@ -87,6 +87,13 @@ const HomePage = ({ data }) => {
         ) : (
           ""
         )}
+         {icons.icon === "tableau" ? (
+          <Link to={icons.url} target="_blank">
+            <SiTableau />
+          </Link>
+        ) : (
+          ""
+        )}
         {icons.icon === "twitter" ? (
           <Link to={icons.url} target="_blank">
             <RiTwitterFill />
