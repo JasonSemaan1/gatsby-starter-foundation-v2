@@ -5,6 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
 import {
   RiFacebookBoxFill,
+  SiTableau,
   RiTwitterFill,
   RiLinkedinBoxFill,
   RiYoutubeFill,
@@ -18,7 +19,6 @@ import {
   RiDribbbleFill,
   RiMediumFill,
   RiBehanceFill,
-  SiTableau,
 } from "react-icons/ri"
 import { FaWordpress, FaVk } from "react-icons/fa"
 
