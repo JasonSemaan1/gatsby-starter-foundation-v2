@@ -5,6 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightSLine } from "react-icons/ri"
 import {
   RiFacebookBoxFill,
+  IoLogoTableau,
   RiTwitterFill,
   RiLinkedinBoxFill,
   RiYoutubeFill,
@@ -82,6 +83,13 @@ const HomePage = ({ data }) => {
         {icons.icon === "facebook" ? (
           <Link to={icons.url} target="_blank">
             <RiFacebookBoxFill />
+          </Link>
+        ) : (
+          ""
+        )}
+         {icons.icon === "tableau" ? (
+          <Link to={icons.url} target="_blank">
+            <IoLogoTableau />
           </Link>
         ) : (
           ""
