@@ -181,7 +181,6 @@ collections:
                 options:
                   [
                     "facebook",
-                    "tableau",
                     "twitter",
                     "linkedin",
                     "youtube",
