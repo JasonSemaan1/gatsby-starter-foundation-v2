@@ -2,7 +2,7 @@
   "meta": {
     "title": "Jason Semaan",
     "titleTemplate": "%s",
-    "description": "A personal portfolio website, Built with Gatsby and Netlify CMS. Made with ❤ by Stackrole",
+    "description": "",
     "siteUrl": "https://supabase-scrabble.netlify.app/",
     "image": "/assets/stackrole.png",
     "iconimage": "/assets/stackrole.png",
