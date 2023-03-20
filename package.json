@@ -50,5 +50,7 @@
     "react-icons": "^3.11.0",
     "theme-ui": "^0.6.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "supabase": "^1.42.7"
+  }
 }
