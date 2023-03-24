@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Desk for minimalists
+title: Creating a SQL Powered Scrabble Quick List
 slug: /minimalists-desk
 date: 2020-05-13 12:46
 description: sdasd
