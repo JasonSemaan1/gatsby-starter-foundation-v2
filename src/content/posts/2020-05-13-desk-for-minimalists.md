@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: Creating a SQL Powered Scrabble Quick List
-slug: /minimalists-desk
+slug: /scrabble-quick-list
 date: 2020-05-13 12:46
 description: sdasd
 featuredImage: /assets/bench-accounting-nvzvopqw0gc-unsplash.jpg
