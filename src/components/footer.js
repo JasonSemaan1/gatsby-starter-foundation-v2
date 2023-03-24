@@ -12,11 +12,8 @@ const Footer = () => (
   >
     <div className="container">
       <p>
-        Thanks for stopping by {!}
-        <span className="icon -love">
-          <RiHeart2Line />
-        </span>{" "}
-        by <Link to="/">Stackrole.com</Link>
+        Thanks for stopping by!
+      
       </p>
     </div>
   </footer>
