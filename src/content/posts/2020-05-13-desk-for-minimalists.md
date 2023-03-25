@@ -2,7 +2,7 @@
 template: blog-post
 title: Creating a SQL Powered Scrabble Quick List
 slug: /scrabble-quick-list
-date: 2020-05-13 12:46
+date: 2023-03-25 16:16
 description: sdasd
 featuredImage: /assets/sql-icons.png
 ---
