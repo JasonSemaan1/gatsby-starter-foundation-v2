@@ -29,7 +29,17 @@ featuredImage: /assets/sql-icons.png
 		<li><a href="#section6">Deploying via Netlify</a></li>
 	</ol>
 
+# O﻿rigin of the Idea
 
+# P﻿lotting out the pipeline
+
+# E﻿nabling the Database
+
+# N﻿avigating a front-end form
+
+# U﻿plifting a Home Page to showcase SQL
+
+# D﻿eploying via Netlify
 
 Uh, is the puppy mechanical in any way? Maybe I love you so much I love you no matter who you are pretending to be. If rubbin' frozen dirt in your crotch is wrong, hey I don't wanna be right. I found what I need. And it's not friends, it's things.
 
