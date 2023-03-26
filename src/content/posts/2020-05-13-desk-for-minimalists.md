@@ -25,8 +25,6 @@ featuredImage: /assets/sql-icons.png
 		<li><a href="#section4">Navigating a front-end form</a></li>
 		<!-- Link to section 5: Uplifting Home Page to showcase SQL -->
 		<li><a href="#section5">Uplifting Home Page to showcase SQL</a></li>
-		<!-- Link to section 6: Deploying via Netlify -->
-		<li><a href="#section6">Deploying via Netlify</a></li>
 	</ol>
 
 <!--StartFragment-->
@@ -66,7 +64,7 @@ A﻿fter documenting all of my requirements I realised I was going to need a pip
 
 ![](/assets/data-pipeline.drawio.png)
 
-F﻿irst came the data- thanks to a helpful stackoverflow post I was able to download a .txt file which listed all valid Scrabble words. A few Excel formulas helped calculate the score value of each word.
+F﻿irst came the data - thanks to a helpful stackoverflow post I was able to download a .txt file which listed all valid Scrabble words. A few Excel formulas helped calculate the score value of each word.
 
 N﻿ow where do I store this data?
 
@@ -226,7 +224,9 @@ W﻿ith my app in a good state my next task was to embed it into my website. My 
 
 T﻿he final piece of the puzzle was to create a SQL icon on my home page that would serve as a hyperlink to the app site hosted via Retool.
 
-I﻿f you've come this far thank you for coming along with this learning journey with me.
+After a long journey of trial, error and a whole lot of learning my app was born.
+
+I﻿f you've come this far thank you for coming along on this learning journey with me.
 
 </p> 
 
