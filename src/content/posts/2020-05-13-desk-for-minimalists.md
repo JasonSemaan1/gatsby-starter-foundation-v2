@@ -94,7 +94,7 @@ M﻿y front-end knowledge is limited so this posed a challenge. As fate (or over
 
 Working in a data field, I﻿ usually deplore my invasion of privacy to personalise my ad experience but in this case I'll make an exception.
 
-<!DOCTYPE html>
+ <!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -106,44 +106,23 @@ Working in a data field, I﻿ usually deplore my invasion of privacy to personal
     position: relative;
     border: 1px solid #ccc;
     padding: 10px;
-    overflow: hidden;
-    max-height: 180px;
     width: 100%;
   }
-  
-  .sql-code {
-    white-space: pre-wrap;
+
+  textarea {
+    width: 100%;
+    min-height: 180px;
+    resize: vertical;
     font-family: monospace;
-  }
-  
-  .toggle-btn {
-    display: inline-block;
-    background-color: lightgray;
-    padding: 4px 8px;
-    cursor: pointer;
-    user-select: none;
-    margin-top: 10px;
+    white-space: pre-wrap;
   }
 </style>
-<script>
-  function toggleFullCode() {
-    var sqlCodeContainer = document.getElementById("sqlCodeContainer");
-    var toggleBtn = document.getElementById("toggleBtn");
-    
-    if (sqlCodeContainer.style.maxHeight === "180px") {
-      sqlCodeContainer.style.maxHeight = "none";
-      toggleBtn.innerHTML = "Click here to see only the first 10 lines";
-    } else {
-      sqlCodeContainer.style.maxHeight = "180px";
-      toggleBtn.innerHTML = "Click here to see full code block";
-    }
-  }
-</script>
+
 </head>
 <body>
   <h1>Final SQL Query with Javascript injections</h1>
-  <div id="sqlCodeContainer" class="sql-code-container">
-    <div class="sql-code">WITH
+  <div class="sql-code-container">
+    <textarea readonly>WITH
   letters AS (
     SELECT
       unnest(
@@ -214,11 +193,16 @@ HAVING
       letters
   )
 ORDER BY
-  "Value" DESC;</div>
+  "Value" DESC;</textarea>
   </div>
-  <div id="toggleBtn" class="toggle-btn" onclick="toggleFullCode()">Click here to see full code block</div>
 </body>
-</html>
+</html>﻿
+
+I﻿t's alive! My query was behaving as expected and returned an an output where the highest scoring words were presented first and only instances of <= all letters were present in a word.
+
+N﻿ow all that was left was to spruce up the front-end with a fresh coat of paint to the form design.
+
+![](/assets/sql_final_result.png)
 
 </p> 
 
