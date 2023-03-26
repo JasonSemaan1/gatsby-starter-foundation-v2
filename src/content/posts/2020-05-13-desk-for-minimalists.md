@@ -88,7 +88,11 @@ My searching for database solutions returned Supabase as a viable solution - it 
 
 <p>
 
-This section will explain how to navigate and interact with the front-end form, including how to input and submit data, as well as any validation or error handling mechanisms in place.
+W﻿ith my back-end database in place I needed to somehow figure out how to have it talk to a front-end form that would capture user input and feed a custom query based on this input to return relevant values.
+
+M﻿y front-end knowledge is limited so this posed a challenge. As fate (or overlistening devices ready to personalise my ads) would have it, while scrolling Facebook one day I was presented with Retool. It was an app which supported an api to connect to Supabase AND allow for javascript functions to inject variable fields into a SQL query.
+
+Working in a data field, I﻿ usually deplore my invasion of privacy to personalise my ad experience but in this case I'll make an exception.
 
 <!DOCTYPE html>
 
@@ -100,51 +104,46 @@ This section will explain how to navigate and interact with the front-end form, 
 <style>
   .sql-code-container {
     position: relative;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow: hidden;
+    max-height: 180px;
+    width: 100%;
   }
   
-  textarea {
-    width: 100%;
-    min-height: 100px;
-    overflow: hidden;
-    resize: none;
+  .sql-code {
+    white-space: pre-wrap;
+    font-family: monospace;
   }
   
   .toggle-btn {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    display: inline-block;
     background-color: lightgray;
     padding: 4px 8px;
     cursor: pointer;
     user-select: none;
+    margin-top: 10px;
   }
 </style>
 <script>
   function toggleFullCode() {
-    var textarea = document.getElementById("sqlCode");
+    var sqlCodeContainer = document.getElementById("sqlCodeContainer");
     var toggleBtn = document.getElementById("toggleBtn");
     
-    if (textarea.style.maxHeight === "180px") {
-      textarea.style.maxHeight = "none";
+    if (sqlCodeContainer.style.maxHeight === "180px") {
+      sqlCodeContainer.style.maxHeight = "none";
       toggleBtn.innerHTML = "Click here to see only the first 10 lines";
     } else {
-      textarea.style.maxHeight = "180px";
+      sqlCodeContainer.style.maxHeight = "180px";
       toggleBtn.innerHTML = "Click here to see full code block";
     }
-    
-    autoResize(textarea);
-  }
-  
-  function autoResize(textarea) {
-    textarea.style.height = 'auto';
-    textarea.style.height = (textarea.scrollHeight) + 'px';
   }
 </script>
 </head>
 <body>
   <h1>Final SQL Query with Javascript injections</h1>
-  <div class="sql-code-container">
-    <textarea id="sqlCode" oninput="autoResize(this)" style="max-height: 180px;">WITH
+  <div id="sqlCodeContainer" class="sql-code-container">
+    <div class="sql-code">WITH
   letters AS (
     SELECT
       unnest(
@@ -215,9 +214,9 @@ HAVING
       letters
   )
 ORDER BY
-  "Value" DESC;</textarea>
-    <div id="toggleBtn" class="toggle-btn" onclick="toggleFullCode()">Click here to see full code block</div>
+  "Value" DESC;</div>
   </div>
+  <div id="toggleBtn" class="toggle-btn" onclick="toggleFullCode()">Click here to see full code block</div>
 </body>
 </html>
 
