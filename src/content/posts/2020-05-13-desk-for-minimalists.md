@@ -94,109 +94,7 @@ M﻿y front-end knowledge is limited so this posed a challenge. As fate (or over
 
 Working in a data field, I﻿ usually deplore my invasion of privacy to personalise my ad experience but in this case I'll make an exception.
 
- <!DOCTYPE html>
 
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Expandable SQL Text Box</title>
-<style>
-  .sql-code-container {
-    position: relative;
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 100%;
-  }
-
-  textarea {
-    width: 100%;
-    min-height: 180px;
-    resize: vertical;
-    font-family: monospace;
-    white-space: pre-wrap;
-  }
-</style>
-
-</head>
-<body>
-  <h1>Final SQL Query with Javascript injections</h1>
-  <div class="sql-code-container">
-    <textarea readonly>WITH
-  letters AS (
-    SELECT
-      unnest(
-        ARRAY\[
-          {{textInput1.value.toUpperCase()}},
-          {{textInput2.value.toUpperCase()}},
-          {{textInput3.value.toUpperCase()}},
-          {{textInput4.value.toUpperCase()}},
-          {{textInput5.value.toUpperCase()}},
-          {{textInput6.value.toUpperCase()}},
-          {{textInput7.value.toUpperCase()}},
-          {{textInput8.value.toUpperCase()}},
-          {{textInput9.value.toUpperCase()}},
-          {{textInput10.value.toUpperCase()}},
-          {{textInput11.value.toUpperCase()}},
-          {{textInput12.value.toUpperCase()}},
-          {{textInput13.value.toUpperCase()}},
-          {{textInput14.value.toUpperCase()}},
-          {{textInput15.value.toUpperCase()}}
-        ]
-      ) AS letter
-  ),
-  letter_counts AS (
-    SELECT
-      letter,
-      COUNT(\*) AS count
-    FROM
-      letters
-    GROUP BY
-      letter
-  )
-SELECT
-  "Actual_Word",
-  "Value"
-FROM
-  scrabble_Sql
-  JOIN letter_counts ON (
-    LENGTH("Actual_Word") - LENGTH(REPLACE("Actual_Word", letter_counts.letter, ''))
-  ) <= letter_counts.count
-WHERE
-  LENGTH("Actual_Word") <= (
-    SELECT
-      COUNT(\*)
-    FROM
-      letters
-  )
-  AND NOT EXISTS (
-    SELECT
-      1
-    FROM
-      regexp_split_to_table("Actual_Word", '') char
-    WHERE
-      char NOT IN (
-        SELECT
-          letter
-        FROM
-          letters
-      )
-  )
-GROUP BY
-  "Actual_Word",
-  "Value"
-HAVING
-  COUNT(*) = (
-    SELECT
-      COUNT(DISTINCT letter)
-    FROM
-      letters
-  )
-ORDER BY
-  "Value" DESC;</textarea>
-  </div>
-</body>
-</html>﻿
 
 I﻿t's alive! My query was behaving as expected and returned an an output where the highest scoring words were presented first and only instances of <= all letters were present in a word.
 
@@ -212,7 +110,11 @@ N﻿ow all that was left was to spruce up the front-end with a fresh coat of pai
 
 <p>
 
-Here, we'll discuss how to enhance the home page to showcase SQL data, including visualizations, analytics, and other interactive elements.</p> <!-- Section 6: Deploying via Netlify --> <h2 id="section6">Deploying via Netlify</h2> <p>In this final section, we'll cover how to deploy the project via Netlify, including any necessary configurations, settings, and optimizations.
+W﻿ith my app in a good state my next task was to embed it into my website. My initial attempt involved looking at Retool's Embed functionality which required self-hosting to create a personal access token and use the api to connect app to website. Unfortunately pursuing AWS deployment using their one-click deploy option continuously threw up errors, so I opted for the shortcut approach of simply creating a shareable public URL.
+
+T﻿he final piece of the puzzle was to create a SQL icon on my home page that would serve as a hyperlink to the app site hosted via Retool.
+
+I﻿f you've come this far thank you for coming along with this learning journey with me.
 
 </p> 
 
@@ -221,3 +123,15 @@ Here, we'll discuss how to enhance the home page to showcase SQL data, including
 </html>
 
 <!--EndFragment-->
+
+**R﻿esources:**
+
+<https://www.reddit.com/r/SQL/comments/g4ct1l/comment/fnx11mc/>
+
+<https://boardgames.stackexchange.com/questions/38366/latest-collins-scrabble-words-list-in-text-file>
+
+ChatGPT
+
+<https://supabase.com/docs>
+
+<https://docs.retool.com/docs>
