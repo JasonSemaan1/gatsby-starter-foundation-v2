@@ -56,8 +56,6 @@ W﻿ith my above-head-lightbulb at full brightness, I unpacked stiff's comment f
 
 A﻿fter documenting all of my requirements I realised I was going to need a pipeline.
 
-
-
 </p> 
 
 <!-- Section 2: Plotting out the pipeline --> 
@@ -92,6 +90,141 @@ Here, we'll cover how to set up and enable the database, including selecting the
 
 This section will explain how to navigate and interact with the front-end form, including how to input and submit data, as well as any validation or error handling mechanisms in place.
 
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expandable SQL Text Box</title>
+<style>
+  .sql-code-container {
+    position: relative;
+  }
+  
+  textarea {
+    width: 100%;
+    min-height: 100px;
+    overflow: hidden;
+    resize: none;
+  }
+  
+  .toggle-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: lightgray;
+    padding: 4px 8px;
+    cursor: pointer;
+    user-select: none;
+  }
+</style>
+<script>
+  function toggleFullCode() {
+    var textarea = document.getElementById("sqlCode");
+    var toggleBtn = document.getElementById("toggleBtn");
+    
+    if (textarea.style.maxHeight === "180px") {
+      textarea.style.maxHeight = "none";
+      toggleBtn.innerHTML = "Click here to see only the first 10 lines";
+    } else {
+      textarea.style.maxHeight = "180px";
+      toggleBtn.innerHTML = "Click here to see full code block";
+    }
+    
+    autoResize(textarea);
+  }
+  
+  function autoResize(textarea) {
+    textarea.style.height = 'auto';
+    textarea.style.height = (textarea.scrollHeight) + 'px';
+  }
+</script>
+</head>
+<body>
+  <h1>Final SQL Query with Javascript injections</h1>
+  <div class="sql-code-container">
+    <textarea id="sqlCode" oninput="autoResize(this)" style="max-height: 180px;">WITH
+  letters AS (
+    SELECT
+      unnest(
+        ARRAY[
+          {{textInput1.value.toUpperCase()}},
+          {{textInput2.value.toUpperCase()}},
+          {{textInput3.value.toUpperCase()}},
+          {{textInput4.value.toUpperCase()}},
+          {{textInput5.value.toUpperCase()}},
+          {{textInput6.value.toUpperCase()}},
+          {{textInput7.value.toUpperCase()}},
+          {{textInput8.value.toUpperCase()}},
+          {{textInput9.value.toUpperCase()}},
+          {{textInput10.value.toUpperCase()}},
+          {{textInput11.value.toUpperCase()}},
+          {{textInput12.value.toUpperCase()}},
+          {{textInput13.value.toUpperCase()}},
+          {{textInput14.value.toUpperCase()}},
+          {{textInput15.value.toUpperCase()}}
+        ]
+      ) AS letter
+  ),
+  letter_counts AS (
+    SELECT
+      letter,
+      COUNT(*) AS count
+    FROM
+      letters
+    GROUP BY
+      letter
+  )
+SELECT
+  "Actual_Word",
+  "Value"
+FROM
+  scrabble_Sql
+  JOIN letter_counts ON (
+    LENGTH("Actual_Word") - LENGTH(REPLACE("Actual_Word", letter_counts.letter, ''))
+  ) <= letter_counts.count
+WHERE
+  LENGTH("Actual_Word") <= (
+    SELECT
+      COUNT(*)
+    FROM
+      letters
+  )
+  AND NOT EXISTS (
+    SELECT
+      1
+    FROM
+      regexp_split_to_table("Actual_Word", '') char
+    WHERE
+      char NOT IN (
+        SELECT
+          letter
+        FROM
+          letters
+      )
+  )
+GROUP BY
+  "Actual_Word",
+  "Value"
+HAVING
+  COUNT(*) = (
+    SELECT
+      COUNT(DISTINCT letter)
+    FROM
+      letters
+  )
+ORDER BY
+  "Value" DESC;</textarea>
+    <div id="toggleBtn" class="toggle-btn" onclick="toggleFullCode()">Click here to see full code block</div>
+  </div>
+</body>
+</html>
+
+```
+
 </p> 
 
 <!-- Section 5: Uplifting Home Page to showcase SQL --> 
@@ -109,7 +242,3 @@ Here, we'll discuss how to enhance the home page to showcase SQL data, including
 </html>
 
 <!--EndFragment-->
-
-![Royal Mail](/assets/royal-mail-unsplash.jpg "Royal Mail from Unsplash")
-
-![]()
