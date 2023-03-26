@@ -78,7 +78,7 @@ N﻿ow where do I store this data?
 
 <p>
 
-Here, we'll cover how to set up and enable the database, including selecting the appropriate technology, designing the schema, and creating queries.
+My searching for database solutions returned Supabase as a viable solution - it had robust API documentation and used postgres in the background which was great as I had uploaded my word list to a local instance to practice queries.
 
 </p> 
 
@@ -90,10 +90,8 @@ Here, we'll cover how to set up and enable the database, including selecting the
 
 This section will explain how to navigate and interact with the front-end form, including how to input and submit data, as well as any validation or error handling mechanisms in place.
 
-
-
-```html
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -150,7 +148,7 @@ This section will explain how to navigate and interact with the front-end form, 
   letters AS (
     SELECT
       unnest(
-        ARRAY[
+        ARRAY\[
           {{textInput1.value.toUpperCase()}},
           {{textInput2.value.toUpperCase()}},
           {{textInput3.value.toUpperCase()}},
@@ -172,7 +170,7 @@ This section will explain how to navigate and interact with the front-end form, 
   letter_counts AS (
     SELECT
       letter,
-      COUNT(*) AS count
+      COUNT(\*) AS count
     FROM
       letters
     GROUP BY
@@ -189,7 +187,7 @@ FROM
 WHERE
   LENGTH("Actual_Word") <= (
     SELECT
-      COUNT(*)
+      COUNT(\*)
     FROM
       letters
   )
@@ -222,8 +220,6 @@ ORDER BY
   </div>
 </body>
 </html>
-
-```
 
 </p> 
 
