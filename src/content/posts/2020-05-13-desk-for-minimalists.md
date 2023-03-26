@@ -94,7 +94,119 @@ M﻿y front-end knowledge is limited so this posed a challenge. As fate (or over
 
 Working in a data field, I﻿ usually deplore my invasion of privacy to personalise my ad experience but in this case I'll make an exception.
 
+<!DOCTYPE html>
 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expandable SQL Text Box</title>
+<style>
+  .sql-code-container {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 156px; / *Adjusted to display first 8 lines* /
+    max-width: 500%; / *Adjusted to be 5 times wider* /
+    resize: vertical;
+    font-family: monospace;
+    white-space: pre-wrap;
+  }
+</style>
+
+</head>
+<body>
+  <h1>Final SQL Query with Javascript injections</h1>
+  <div class="sql-code-container">
+    <textarea readonly>-- Create a temporary table 'letters' with the input values
+WITH
+  letters AS (
+    SELECT
+      unnest(
+        ARRAY\[
+          {{textInput1.value.toUpperCase()}},
+          {{textInput2.value.toUpperCase()}},
+          {{textInput3.value.toUpperCase()}},
+          {{textInput4.value.toUpperCase()}},
+          {{textInput5.value.toUpperCase()}},
+          {{textInput6.value.toUpperCase()}},
+          {{textInput7.value.toUpperCase()}},
+          {{textInput8.value.toUpperCase()}},
+          {{textInput9.value.toUpperCase()}},
+          {{textInput10.value.toUpperCase()}},
+          {{textInput11.value.toUpperCase()}},
+          {{textInput12.value.toUpperCase()}},
+          {{textInput13.value.toUpperCase()}},
+          {{textInput14.value.toUpperCase()}},
+          {{textInput15.value.toUpperCase()}}
+        ]
+      ) AS letter
+  ),
+  -- Count occurrences of each letter in 'letters'
+  letter_counts AS (
+    SELECT
+      letter,
+      COUNT(\*) AS count
+    FROM
+      letters
+    GROUP BY
+      letter
+  )
+-- Main query to find valid words
+SELECT
+  "Actual_Word",
+  "Value"
+FROM
+  scrabble_Sql
+  -- Join with 'letter_counts' to match words containing input letters
+  JOIN letter_counts ON (
+    LENGTH("Actual_Word") - LENGTH(REPLACE("Actual_Word", letter_counts.letter, ''))
+  ) <= letter_counts.count
+WHERE
+  -- Filter words with length less than or equal to the count of input letters
+  LENGTH("Actual_Word") <= (
+    SELECT
+      COUNT(\*)
+    FROM
+      letters
+  )
+  -- Exclude words with characters not in the input letters
+  AND NOT EXISTS (
+    SELECT
+      1
+    FROM
+      regexp_split_to_table("Actual_Word", '') char
+    WHERE
+      char NOT IN (
+        SELECT
+          letter
+        FROM
+          letters
+      )
+  )
+-- Group by 'Actual_Word' and 'Value'
+GROUP BY
+  "Actual_Word",
+  "Value"
+-- Filter words that use all input letters
+HAVING
+  COUNT(*) = (
+    SELECT
+      COUNT(DISTINCT letter)
+    FROM
+      letters
+  )
+-- Order by the word value in descending order
+ORDER BY
+  "Value" DESC;</textarea>
+  </div>
+</body>
+</html>
 
 I﻿t's alive! My query was behaving as expected and returned an an output where the highest scoring words were presented first and only instances of <= all letters were present in a word.
 
