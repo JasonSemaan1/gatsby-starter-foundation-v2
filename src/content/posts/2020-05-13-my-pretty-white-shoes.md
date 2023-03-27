@@ -6,4 +6,4 @@ date: 2023-03-28 00:21
 description: Creating a choose your own adventure game in python
 featuredImage: /assets/dragon-of-doom-small.png
 ---
-t﻿est
+The next step of my career dev journey was to tame the terrific Python and savor the swift, slithering satisfaction of solving complex coding needs.
