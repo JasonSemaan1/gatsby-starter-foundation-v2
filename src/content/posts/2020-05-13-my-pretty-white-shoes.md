@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: test
+title: testyv2
 slug: /gaming-extravaganza
 date: 2020-05-13 12:55
 description: How we scaled an Extreme gaming extravaganza
