@@ -4,7 +4,7 @@ title: Creating a SQL Powered Scrabble Quick List
 slug: /scrabble-quick-list
 date: 2023-03-25 16:16
 description: sdasd
-featuredImage: /assets/sql-icons.png
+featuredImage: /assets/sql-icons-big.png
 ---
 <!DOCTYPE html>
 
@@ -126,7 +126,7 @@ WITH
   letters AS (
     SELECT
       unnest(
-        ARRAY\[
+        ARRAY\\[
           {{textInput1.value.toUpperCase()}},
           {{textInput2.value.toUpperCase()}},
           {{textInput3.value.toUpperCase()}},
@@ -149,7 +149,7 @@ WITH
   letter_counts AS (
     SELECT
       letter,
-      COUNT(\*) AS count
+      COUNT(\\*) AS count
     FROM
       letters
     GROUP BY
@@ -169,7 +169,7 @@ WHERE
   -- Filter words with length less than or equal to the count of input letters
   LENGTH("Actual_Word") <= (
     SELECT
-      COUNT(\*)
+      COUNT(\\*)
     FROM
       letters
   )
@@ -242,8 +242,8 @@ I﻿f you've come this far thank you for coming along on this learning journey w
 
 <https://boardgames.stackexchange.com/questions/38366/latest-collins-scrabble-words-list-in-text-file>
 
-ChatGPT
-
 <https://supabase.com/docs>
 
 <https://docs.retool.com/docs>
+
+<https://chat.openai.com/chat?model=gpt-4>
