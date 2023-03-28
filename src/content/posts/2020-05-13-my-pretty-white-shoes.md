@@ -12,7 +12,7 @@ The next step of my career dev journey was to tame the terrific Python and savor
 
 A﻿s a hobby I am a GameMaster in the co-operative tabletop roleplaying game Pathfinder (similar to D&D), where I take some friends through a lengthy narrative.
 
-B﻿y combining my love for story telling with the goal of becoming familiar with python my next project idea was born: a choose your own adventure game!
+B﻿y combining my love for story telling with the goal of becoming familiar with python my next project idea was born: a choose your own adventure game! yes
 
 ![]()
 
