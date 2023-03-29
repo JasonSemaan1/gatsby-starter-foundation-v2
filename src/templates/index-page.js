@@ -22,6 +22,7 @@ import {
 import { FaWordpress, FaVk } from "react-icons/fa"
 import { SiTableau } from "react-icons/si"
 import { AiOutlineConsoleSql } from "react-icons/ai"
+import { DiPython } from "react-icons/di"
 
 import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
@@ -98,6 +99,13 @@ const HomePage = ({ data }) => {
         {icons.icon === "SQL" ? (
           <Link to={icons.url} target="_blank">
             <AiOutlineConsoleSql />
+          </Link>
+        ) : (
+          ""
+        )}
+         {icons.icon === "python" ? (
+          <Link to={icons.url} target="_blank">
+            <DiPython />
           </Link>
         ) : (
           ""
