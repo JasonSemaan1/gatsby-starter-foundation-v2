@@ -105,9 +105,9 @@ T﻿he main code logic I settled on was to define every story choice and then re
 
 [W﻿riting a Text-Based Adventure Game in Python](https://youtu.be/miuHrP2O7Jw)
 
-[C﻿hoose Your Own Adventure Game in Python (Beginners)](https://youtu.be/DEcFCn2ubSg)
+[C﻿hoose Your Own Adventure Game in Python (Beginners](https://youtu.be/DEcFCn2ubSg)
 
-<https://www.youtube.com/watch?v=DEcFCn2ubSg>
+<https://inventwithpython.com/invent4thed/chapter5.html>
 
 https://twinery.org/
 
