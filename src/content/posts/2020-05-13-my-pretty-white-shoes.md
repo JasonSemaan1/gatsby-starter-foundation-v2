@@ -45,9 +45,7 @@ Coupling this hobby with learning Python seemed like a no-brainer.
 
 The idea was simple enough - allow the player to input commands which would influence the flow of the story.
 
-By combining my passion for storytelling and ambition to learn Python my next project idea was born: a classic Choose your own adventure game!
-
-
+By combining my passion for storytelling and ambition to learn Python my next project idea was born: a classic choose your own adventure game!
 
 <!--StartFragment-->
 
@@ -63,9 +61,7 @@ F﻿irst thing I needed was a story - the writing wouldn't be too much of a chal
 
 However writing a branching narrative was challenging as I'd have to be able to keep track of all the paths and options leading onto the next choice. After a bit of googling I found the helpful online tool Twinery. It allowed me to create paths with many different choices, displaying it in a clear visual format, which helped plan out the big picture of the story.
 
-Ironically enough once I had laid out my paths and choices, I realised Twinery had the option to proof read and even play it straight away with no additional work required! However it was javascript-based and my eyes were on the prize with Python. Perhaps I'll save javascript for another day...
-
-
+Ironically enough once I had laid out my paths and choices, I realised Twinery had the option to proof read and even play it straight away with no additional work required! However it was javascript-based and the backend was done for you. My eyes were on the prize with Python - perhaps I'll save javascript for another day...
 
 ![](/assets/storyboard.png)
 
@@ -85,7 +81,7 @@ O﻿n one screen a black void opened up endlessly before me - the other screen a
 
 W﻿ith the help of a few video tutorials I picked up some best practices when handling user text inputs, such as the lower() and strip() functions which standardised what the user entered to ensure the story could continue successfully. I also learnt of the 'time' module in Python to add a bit of dramatic flair to the story outputs. An essential tip was the use of loops via 'while True' and nested if/elif functions to ensure certain choices would start from the beginning and allow the player to use their new found knowledge to try a different path from the beginning.
 
-T﻿he main code logic I settled on was to define every story choice and then return any other connected story choice based on user input. This resulted in an interweaved web of story choices leading to a next step, conclusion or new beginning.
+T﻿he main code logic I settled on was to define every story choice as a variable and then return any other connected story choice variable based on user input. This resulted in an interweaved web of story choices leading to a next step, conclusion or new beginning.
 
 ![](/assets/total_code_size.png)
 
@@ -99,6 +95,14 @@ T﻿he main code logic I settled on was to define every story choice and then re
 
 <p>
 
+T﻿he final piece of the Python-puzzle was integrating the game into my existing website.
+
+A﻿fter a quick google I identified the 'replit' service, which allowed for code to run live in a browser with an IDE, compiler and interpreter.
+
+It was simple enough to generate a link to share the code and embed it on my front page to provide a quick link to play the game.
+
+
+
 
 
 **R﻿esources**
@@ -110,5 +114,7 @@ T﻿he main code logic I settled on was to define every story choice and then re
 <https://inventwithpython.com/invent4thed/chapter5.html>
 
 https://twinery.org/
+
+https://replit.com/~
 
 C﻿hatGPT
