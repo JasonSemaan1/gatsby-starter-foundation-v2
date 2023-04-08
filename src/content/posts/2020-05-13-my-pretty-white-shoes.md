@@ -17,8 +17,8 @@ featuredImage: /assets/dice-python-fun-bigger.png
 	<ol>
 		<!-- Link to section 1: Beginning The Boa -->
 		<li><a href="#section1">Beginning The Boa</a></li>
-		<!-- Link to section 2:  I'm Going To Need A Slithering Storyboard -->
-		<li><a href="#section2">I'm Going To Need A Slithering Storyboard</a></li>
+		<!-- Link to section 2:  I'm Going To Need A Sssstoryboard -->
+		<li><a href="#section2">I'm Going To Need A Sssslithering Storyboard</a></li>
 		<!-- Link to section 3: Charming The Cobra -->
 		<li><a href="#section3">Charming The Cobra</a></li>
 		<!-- Link to section 4: Scale-ing This Story Into My Narrative -->
@@ -49,9 +49,9 @@ By combining my passion for storytelling and ambition to learn Python my next pr
 
 <!--StartFragment-->
 
-<!-- Section 2: I'm Going To Need A Slithering Storyboard --> 
+<!-- Section 2: I'm Going To Need A Sssstoryboard --> 
 
-<h2 id="section2">I'm Going To Need A Slithering Storyboard </h2> 
+<h2 id="section2">I'm Going To Need A Sssstoryboard </h2> 
 
 <p>
 
@@ -100,10 +100,6 @@ T﻿he final piece of the Python-puzzle was integrating the game into my existin
 A﻿fter a quick google I identified the 'replit' service, which allowed for code to run live in a browser with an IDE, compiler and interpreter.
 
 It was simple enough to generate a link to share the code and embed it on my front page to provide a quick link to play the game.
-
-
-
-
 
 **R﻿esources**
 
