@@ -6,6 +6,7 @@ date: 2023-04-16 01:41
 description: How to draw a character
 featuredImage: /assets/andrew-seaman-4fi_4q6_efm-unsplash.jpg
 ---
+https://www.reddit.com/r/FoundryVTT/comments/t2zwx3/converting_chat_log_to_readable_html/
 
 In visual arts, a model sheet, also known as a character board, character sheet, character study or simply a study, is a document used to help standardize the appearance, poses, and gestures of a character in arts such as animation, comics, and video games.
 
@@ -21,11 +22,11 @@ Yes! In your face, Gandhi! Ah, yes! John Quincy Adding Machine. He struck a chor
 
 ### The key to victory is discipline, and that means a well made bed. You will practice until you can make your bed in your sleep.
 
-Why am I sticky and naked? Did I miss something fun? We're also Santa Claus! Soothe us with sweet lies. Hi, I'm a naughty nurse, and I really need someone to talk to. \$9.95 a minute.
+Why am I sticky and naked? Did I miss something fun? We're also Santa Claus! Soothe us with sweet lies. Hi, I'm a naughty nurse, and I really need someone to talk to. $9.95 a minute.
 
-- That could be 'my' beautiful soul sitting naked on a couch. If I could just learn to play this stupid thing.
-- We'll need to have a look inside you with this camera.
-- Fry! Quit doing the right thing, you jerk!
+* That could be 'my' beautiful soul sitting naked on a couch. If I could just learn to play this stupid thing.
+* We'll need to have a look inside you with this camera.
+* Fry! Quit doing the right thing, you jerk!
 
 Who said that? SURE you can die! You want to die?! Aww, it's true. I've been hiding it for so long. I videotape every customer that comes in here, so that I may blackmail them later. Ah, computer dating. It's like pimping, but you rarely have to use the phrase "upside your head."
 
