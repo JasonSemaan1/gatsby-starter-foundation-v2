@@ -1,8 +1,8 @@
 ---
 template: blog-post
-title: Character design
-slug: /character-design
-date: 2020-05-23 23:40
+title: Designing A D&D Dashboard
+slug: /designing-DND-Dashboard
+date: 2023-04-16 01:41
 description: How to draw a character
 featuredImage: /assets/andrew-seaman-4fi_4q6_efm-unsplash.jpg
 ---
