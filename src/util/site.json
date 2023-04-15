@@ -4,8 +4,8 @@
     "titleTemplate": "%s",
     "description": "",
     "siteUrl": "https://supabase-scrabble.netlify.app/",
-    "image": "/assets/stackrole.png",
-    "iconimage": "/assets/stackrole.png",
+    "image": "/assets/data.png",
+    "iconimage": "/assets/data.png",
     "twitterUsername": ""
   },
   "ga": "UA-XXXXXXXXX-X"
