@@ -110,7 +110,13 @@ L﻿ike any good aftermath portion of a heist movie, I now had to figure out how
 
 I﻿ opened Tableau with the eagerness of an artist in front of a blank canvas and began creating the structure of my dashboard. Using all of my data elements plus a few floating heads of my character's portraits I was able to create filters that dynamically showed the character with the highest stat per filter selection, as well as their number of rolls.
 
-<div class='tableauPlaceholder' id='viz1688647885744' style='position: relative'><noscript><a href='#'><img alt='The Exposed TallyAn overview of The Hidden Talon&#39;s performance ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DN&#47;DND_DASHBOARD_TEST&#47;TheExposedTally&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DND_DASHBOARD_TEST&#47;TheExposedTally' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DN&#47;DND_DASHBOARD_TEST&#47;TheExposedTally&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1688647885744');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1277px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+T﻿o check it out yourself visit it [here.](https://public.tableau.com/views/DND_DASHBOARD_TEST/TheExposedTally?:language=en-GB&:display_count=n&:origin=viz_share_link)
+
+L﻿ike any good heist adventure I decided to share the spoils with my crew as a reminder of many years filled with goofs, ridiculousness and a heartfelt moment every now and then.
+
+![](/assets/sharing_treasures.png)
+
+
 
 ## R﻿esources
 
