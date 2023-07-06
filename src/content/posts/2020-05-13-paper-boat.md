@@ -51,7 +51,7 @@ L﻿ike any good adventuring party moments before a heist, I created a plan.
 
 T﻿he plan of attack was to extract the chat log from within Foundry VTT, my group's preferred method of playing Table Top Role Playing games online. Once I had this as a text file I needed to create a Python text parser which was capable of recognising patterns within my dataset for each of my character's many, many, many (and I mean many) actions within the game and write this to a csv which would be ingested by Tableau.
 
-L﻿ike any good heist movie it became easier said than done.
+L﻿ike any good heist adventure it became easier said than done.
 
 </p> 
 
@@ -69,6 +69,8 @@ So I decided to scour the internet for the help of the amazing Foundry VTT commu
 
 ![](/assets/redditmacro.png)
 
+Like the climax of any good heist adventure I﻿ had successfully gotten to the vault of treasures - now I needed to slither inside and claim those precious insights.
+
 </p> 
 
 <!-- Section 4: Practicing my Python Parser-tongue --> 
@@ -79,11 +81,36 @@ So I decided to scour the internet for the help of the amazing Foundry VTT commu
 
 </p> 
 
+I﻿ began carefully combing through my text file data source looking for recognisable patterns to parse, like a safe cracker listening for clicks as they slowly turn the dial of a combination lock. It was at this point I had to consider what data attributes I wanted to extract and aggregate on for my final product. I decided on:
+
+* \# of critical hits
+* t﻿otal amount of damage taken
+* b﻿iggest hit taken
+* h﻿ealing received
+* h﻿ighest skill check roll
+* \#﻿ of skill checks completed
+
+W﻿ith my desired data points in mind I began identifying patterns common to each statistic that I needed Python to look for. After some time I identified patterns inherent with every type of roll that I could code Python to look for and aggregate a certain numerical value. However as I went through more and more examples, I realised that the structure of the data was dynamic based on the character that was rolling, as well as their circumstances at the time of rolling which would impact the row the final answer would appear.
+
+![](/assets/identifying_parse_patterns.png)
+
+My assembled crew of google, stackoverflow and chatGPT guided me as I continued to iterate on my Python code until it was able to identify each of the data points I was interested in. My code then generated a csv with the results. All looked well, however I had pasted the entire text file to a separate google sheet and completed some sanity checks to ensure the values were true.
+
+M﻿y business verification testing was a success! W﻿ith my crew of tech assistants at my back I stared at the simple csv that I had generated with a level of confidence that the figures were accurate.
+
+![](/assets/final_csv_output.png)
+
+L﻿ike any good aftermath portion of a heist movie, I now had to figure out how I'd spend my valuable data treasures.
+
 <!-- Section 5: Designing the Dashboard --> 
 
 <h2 id="section5">Designing the Dashboard</h2> 
 
 <p>
+
+I﻿ opened Tableau with the eagerness of an artist in front of a blank canvas and began creating the structure of my dashboard. Using all of my data elements plus a few floating heads of my character's portraits I was able to create filters that dynamically showed the character with the highest stat per filter selection, as well as their number of rolls.
+
+<div class='tableauPlaceholder' id='viz1688647885744' style='position: relative'><noscript><a href='#'><img alt='The Exposed TallyAn overview of The Hidden Talon&#39;s performance ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DN&#47;DND_DASHBOARD_TEST&#47;TheExposedTally&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DND_DASHBOARD_TEST&#47;TheExposedTally' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DN&#47;DND_DASHBOARD_TEST&#47;TheExposedTally&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1688647885744');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1277px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
 ## R﻿esources
 
