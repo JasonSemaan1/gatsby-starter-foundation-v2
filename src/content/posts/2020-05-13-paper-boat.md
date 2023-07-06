@@ -112,11 +112,13 @@ I﻿ opened Tableau with the eagerness of an artist in front of a blank canvas a
 
 T﻿o check it out yourself visit it [here.](https://public.tableau.com/views/DND_DASHBOARD_TEST/TheExposedTally?:language=en-GB&:display_count=n&:origin=viz_share_link)
 
+<iframe src="https://public.tableau.com/views/DND_DASHBOARD_TEST/TheExposedTally?:showVizHome=no&embed=true"
+
+w﻿idth="600" height="400"></iframe>
+
 L﻿ike any good heist adventure I decided to share the spoils with my crew as a reminder of many years filled with goofs, ridiculousness and a heartfelt moment every now and then.
 
 ![](/assets/sharing_treasures.png)
-
-
 
 ## R﻿esources
 
