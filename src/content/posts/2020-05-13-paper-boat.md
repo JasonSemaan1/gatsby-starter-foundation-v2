@@ -37,7 +37,7 @@ featuredImage: /assets/thehiddentalon-pic.png
 
 M﻿y last few projects involved SQL & Python and it had been a while since I created anything in Tableau, so I decided to venture back into visualisation. I wanted to combine Python & Tableau to take a raw data set, transform it and then feed into Tableau to allow my players a chance at data-driven self-reflection.
 
-L﻿ike any good adventuring party moments before a heist I created a plan.
+L﻿ike any good adventuring party moments before a heist, I created a plan.
 
 </p> 
 
@@ -49,6 +49,10 @@ L﻿ike any good adventuring party moments before a heist I created a plan.
 
 ![](/assets/drawio_dashboard_plan.drawio.png)
 
+T﻿he plan of attack was to extract the chat log from within Foundry VTT, my group's preferred method of playing Table Top Role Playing games online. Once I had this as a text file I needed to create a Python text parser which was capable of recognising patterns within my dataset for each of my character's many, many, many (and I mean many) actions within the game and write this to a csv which would be ingested by Tableau.
+
+L﻿ike any good heist movie it became easier said than done.
+
 </p> 
 
 <!-- Section 3: Securing the data source --> 
@@ -57,7 +61,13 @@ L﻿ike any good adventuring party moments before a heist I created a plan.
 
 <p>
 
-M﻿y first task was securing
+I﻿n order to extract my data as raw text I tried to manually copy & paste over 2 years of chat log entries by highlighting and scrolling up but soon realised this was not feasible as it was beyond boring. Next I realised that there was a handy little export chat log option however the output was not what I was expecting.
+
+![](/assets/inbuilt_text_export.png)
+
+So I decided to scour the internet for the help of the amazing Foundry VTT community (filled with plenty of Javascript geniuses) and voila! A nice & neat, fit for purpose macro that extracted all of the text I needed in a parser-able format.
+
+![](/assets/redditmacro.png)
 
 </p> 
 
@@ -74,8 +84,6 @@ M﻿y first task was securing
 <h2 id="section5">Designing the Dashboard</h2> 
 
 <p>
-
-
 
 ## R﻿esources
 
