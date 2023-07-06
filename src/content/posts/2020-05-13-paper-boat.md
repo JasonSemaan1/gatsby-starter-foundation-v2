@@ -110,11 +110,13 @@ L﻿ike any good aftermath portion of a heist movie, I now had to figure out how
 
 I﻿ opened Tableau with the eagerness of an artist in front of a blank canvas and began creating the structure of my dashboard. Using all of my data elements plus a few floating heads of my character's portraits I was able to create filters that dynamically showed the character with the highest stat per filter selection, as well as their number of rolls.
 
-T﻿o check it out yourself visit it [here.](https://public.tableau.com/views/DND_DASHBOARD_TEST/TheExposedTally?:language=en-GB&:display_count=n&:origin=viz_share_link)
+A﻿ few design choices to make it seem more fantasy themed and I was done.
 
-<iframe src="https://public.tableau.com/views/DND_DASHBOARD_TEST/TheExposedTally?:showVizHome=no&embed=true"
+T﻿o check it out yourself check it out below or visit it [here](https://public.tableau.com/views/DND_DASHBOARD_TEST/TheExposedTally?:language=en-GB&:display_count=n&:origin=viz_share_link) (feedback welcome!)
 
-w﻿idth="600" height="400"></iframe>
+<iframe src="https://public.tableau.com/views/DND_DASHBOARD_TEST/TheExposedTally?:showVizHome=no&embed=true"width="1200" height="800"
+
+\></iframe>
 
 L﻿ike any good heist adventure I decided to share the spoils with my crew as a reminder of many years filled with goofs, ridiculousness and a heartfelt moment every now and then.
 
