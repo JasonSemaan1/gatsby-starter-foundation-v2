@@ -3,7 +3,7 @@ template: blog-post
 title: Creating a SQL Powered Scrabble Quick List
 slug: /scrabble-quick-list
 date: 2023-03-25 16:16
-description: sdasd
+description: sql, scrabble
 featuredImage: /assets/sql-icons-big.png
 ---
 <!DOCTYPE html>
@@ -126,7 +126,7 @@ WITH
   letters AS (
     SELECT
       unnest(
-        ARRAY\\\[
+        ARRAY\\\\[
           {{textInput1.value.toUpperCase()}},
           {{textInput2.value.toUpperCase()}},
           {{textInput3.value.toUpperCase()}},
@@ -149,7 +149,7 @@ WITH
   letter_counts AS (
     SELECT
       letter,
-      COUNT(\\\*) AS count
+      COUNT(\\\\*) AS count
     FROM
       letters
     GROUP BY
@@ -169,7 +169,7 @@ WHERE
   -- Filter words with length less than or equal to the count of input letters
   LENGTH("Actual_Word") <= (
     SELECT
-      COUNT(\\\*)
+      COUNT(\\\\*)
     FROM
       letters
   )
@@ -224,7 +224,9 @@ W﻿ith my app in a good state my next task was to embed it into my website. My 
 
 T﻿he final piece of the puzzle was to create a SQL icon on my home page that would serve as a hyperlink to the app site hosted via Retool.
 
-After a long journey of trial, error and a whole lot of learning my app was born.
+After a long journey of trial, error and a whole lot of learning my app was born. Check it out below or available [here](https://jasonsemaan1.retool.com/embedded/public/cc3e87c8-fc2d-4ec5-971e-e4bc661964b4).
+
+<iframe src="https://jasonsemaan1.retool.com/embedded/public/cc3e87c8-fc2d-4ec5-971e-e4bc661964b4" width="800" height="750" />
 
 I﻿f you've come this far thank you for coming along on this learning journey with me.
 
