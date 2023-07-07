@@ -101,6 +101,14 @@ A﻿fter a quick google I identified the 'replit' service, which allowed for cod
 
 It was simple enough to generate a link to share the code and embed it on my front page to provide a quick link to play the game.
 
+F﻿eel free to check it out [here](https://replit.com/@Jason10/ChooseYourOwnAdventureGame?v=1#main.py?outputonly=1&lite=1) or play directly below!
+
+<!--StartFragment-->
+
+<iframe src="https://replit.com/@Jason10/ChooseYourOwnAdventureGame?embed=true" width="600" height="400" />
+
+<!--EndFragment-->
+
 **R﻿esources**
 
 [W﻿riting a Text-Based Adventure Game in Python](https://youtu.be/miuHrP2O7Jw)
