@@ -5,6 +5,8 @@ title: About me
 ---
 Thanks for visiting my site.
 
-I'm still a work in progress - while you're waiting here's a picture of an AI generating an image of a smiling pie graph.
+I'm a data analyst who enjoys learning about all things data - engineering, science and analysis techniques and using them to communicate with others.
 
-![Toys](/assets/happy-pie-graph.png "Toys")
+ While you're waiting here's an AI generated image of a smiling pie graph. 
+
+![](/assets/about_us_page_image.png)
