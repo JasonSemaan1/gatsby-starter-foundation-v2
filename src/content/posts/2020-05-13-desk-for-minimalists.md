@@ -6,6 +6,8 @@ date: 2023-03-25 16:16
 description: sql, scrabble
 featuredImage: /assets/sql-icons-big.png
 ---
+**U﻿pdate 2024/02/03:** With IPv4 addresses becoming more scarce, I had to modify the connection string to a IPv6 version. Thankfully Supabase made it pretty easy so all I had to do was login to the retool app and update the connection config. Scrabble away!
+
 <!DOCTYPE html>
 
 <html>
@@ -126,7 +128,7 @@ WITH
   letters AS (
     SELECT
       unnest(
-        ARRAY\\\\[
+        ARRAY\\\\\[
           {{textInput1.value.toUpperCase()}},
           {{textInput2.value.toUpperCase()}},
           {{textInput3.value.toUpperCase()}},
@@ -149,7 +151,7 @@ WITH
   letter_counts AS (
     SELECT
       letter,
-      COUNT(\\\\*) AS count
+      COUNT(\\\\\*) AS count
     FROM
       letters
     GROUP BY
@@ -169,7 +171,7 @@ WHERE
   -- Filter words with length less than or equal to the count of input letters
   LENGTH("Actual_Word") <= (
     SELECT
-      COUNT(\\\\*)
+      COUNT(\\\\\*)
     FROM
       letters
   )
