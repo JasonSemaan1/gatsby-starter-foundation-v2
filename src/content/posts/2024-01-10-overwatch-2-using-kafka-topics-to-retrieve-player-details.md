@@ -29,8 +29,6 @@ featuredImage: /assets/project_picv3.png
 		<li><a href="#section5">Designing the Dashboard</a></li>
 	</ol>
 
-
-
 <!--StartFragment-->
 
 <!-- Section 1: Origin of the idea --> 
@@ -80,3 +78,7 @@ featuredImage: /assets/project_picv3.png
 <p>
 
 </p>
+
+<iframe src="http://ec2-3-25-135-208.ap-southeast-2.compute.amazonaws.com:8501/?embed=true" height="600" width="100%" style="border:none;"
+
+\></iframe>
