@@ -79,4 +79,4 @@ featuredImage: /assets/project_picv4.png
 
 </p>
 
-<iframe src="https://ec2-3-25-135-208.ap-southeast-2.compute.amazonaws.com:8501/?embed=true" width="800" height="750" />
+<iframe src="https://d385mfa5ih9aaj.cloudfront.net" width="800" height="750" />
