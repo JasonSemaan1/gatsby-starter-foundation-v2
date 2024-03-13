@@ -6,7 +6,7 @@ date: 2024-01-10 14:21
 description: Using an AWS EC2 instance hosted kafka topic to retrieve Overwatch
   2 data from the OverFast API and display in a python powered streamlit
   dashboard.
-featuredImage: /assets/project_picv3.png
+featuredImage: /assets/project_picv4.png
 ---
 <!DOCTYPE html>
 
