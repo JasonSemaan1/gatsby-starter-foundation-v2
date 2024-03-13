@@ -79,6 +79,4 @@ featuredImage: /assets/project_picv3.png
 
 </p>
 
-<iframe src="http://ec2-3-25-135-208.ap-southeast-2.compute.amazonaws.com:8501/?embed=true" height="600" width="100%" style="border:none;"
-
-\></iframe>
+<iframe src="https://ec2-3-25-135-208.ap-southeast-2.compute.amazonaws.com:8501/?embed=true" width="800" height="750" />
