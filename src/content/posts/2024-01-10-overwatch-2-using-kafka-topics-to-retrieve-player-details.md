@@ -39,7 +39,7 @@ featuredImage: /assets/project_picv4.png
 
 Recently two things have been on my mind.
 
-**A﻿t work:** data pipelines which non-technical teams require support to understand how they can plug into to achieve their business objectives. Enabled by Kafka (not the Lebanese minced lamb dish).
+**A﻿t work:** explaining data pipelines to non-technical teams who require support in understanding how to use to achieve their business objectives. Enabled by Kafka (not the Lebanese minced lamb dish).
 
 **N﻿ot at work:** Overwatch 2. Nothing beats after a long day jumping into Discord with your friends to join a 5v5 deathmatch where you fight until your fingers hurt and you need a new keyboard to gloriously...lose?
 
@@ -64,9 +64,9 @@ G﻿ame plan time - I want to be able to scrape game data, more specifically pla
 1. **Identify a source of game performance metrics:** A big shout toValentin "TeKrop" PORCHET for creating the [OverFast API](https://overfast-api.tekrop.fr/) which scrapes data from official Blizzard pages to obtain the data suitable to power my experiment.
 2. F﻿ind a suitable tech stack that will enable me to run a Kafka cluster to stream data from the API call to my reporting solution
 3. Assess a reporting solution that can ingest from the Kafka topic and display the necessary visualisations
-4. H﻿ost this dahsboard somewhere and allow users to input any player name to retrieve their performance
+4. H﻿ost this dashboard somewhere and allow users to input any player name to retrieve their performance
 
-S﻿ound pretty straightforward right? 
+S﻿ounds pretty straightforward right? 
 
 I﻿ was a sweet summer child before I started this project - soon I found myself hopping between software faster than a kangaroo on coals. Until I had this.
 
@@ -103,3 +103,5 @@ I﻿ was a sweet summer child before I started this project - soon I found mysel
 <p>
 
 </p>
+
+<iframe src="https://d385mfa5ih9aaj.cloudfront.net" width="800" height="900" />
