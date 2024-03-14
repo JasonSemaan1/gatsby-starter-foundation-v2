@@ -17,10 +17,10 @@ featuredImage: /assets/project_picv4.png
 <body>
 	<h1>Table of Contents</h1>
 	<ol>
-		<!-- Link to section 1: Origin of the idea -->
-		<li><a href="#section1">Origin of the idea</a></li>
-		<!-- Link to section 2: Plotting out the pipeline -->
-		<li><a href="#section2">Plotting out the pipeline</a></li>
+		<!-- Link to section 1: Reality bends to my will -->
+		<li><a href="#section1">Reality bends to my will</a></li>
+		<!-- Link to section 2: Oh let's break it down! -->
+		<li><a href="#section2">Oh let's break it down!</a></li>
 		<!-- Link to section 3: My heads in the clouds -->
 		<li><a href="#section3">My heads in the clouds</a></li>
 		<!-- Link to section 4: T﻿roubleshooting from the hip-->
@@ -31,21 +31,46 @@ featuredImage: /assets/project_picv4.png
 
 <!--StartFragment-->
 
-<!-- Section 1: Origin of the idea --> 
+<!-- Section 1: Reality bends to my will --> 
 
-<h2 id="section1">Origin of the idea</h2> 
+<h2 id="section1">Reality bends to my will</h2> 
 
 <p>
+
+Recently two things have been on my mind.
+
+**A﻿t work:** data pipelines which non-technical teams require support to understand how they can plug into to achieve their business objectives. Enabled by Kafka (not the Lebanese minced lamb dish).
+
+**N﻿ot at work:** Overwatch 2. Nothing beats after a long day jumping into Discord with your friends to join a 5v5 deathmatch where you fight until your fingers hurt and you need a new keyboard to gloriously...lose?
+
+![](/assets/screenshot-2024-03-14-205258.png)
+
+N﻿ow that can't be right! Everyone was warmed up and ready to perform...was our timing off? Did we push too aggressively? Was it me?
+
+A﻿ll normal thoughts when in the love/hate relationship that is Overwatch 2. After a bout of poor performance the thought crossed my mind - I had been looking for an engaging use case to get familiarity with Kafka to enable real-time data streaming, what if I could leverage game analytics to see how I've performed?
 
 </p> 
 
 <!--StartFragment-->
 
-<!-- Section 2: Plotting out the pipeline --> 
+<!-- Section 2: Oh let's break it down! --> 
 
-<h2 id="section2">Plotting out the pipeline</h2> 
+<h2 id="section2">Oh let's break it down!</h2> 
 
 <p>
+
+G﻿ame plan time - I want to be able to scrape game data, more specifically player stats and then display them in a visually friendly way to review how I've done. Breaking it down into steps I would need to:
+
+1. **Identify a source of game performance metrics:** A big shout toValentin "TeKrop" PORCHET for creating the [OverFast API](https://overfast-api.tekrop.fr/) which scrapes data from official Blizzard pages to obtain the data suitable to power my experiment.
+2. F﻿ind a suitable tech stack that will enable me to run a Kafka cluster to stream data from the API call to my reporting solution
+3. Assess a reporting solution that can ingest from the Kafka topic and display the necessary visualisations
+4. H﻿ost this dahsboard somewhere and allow users to input any player name to retrieve their performance
+
+S﻿ound pretty straightforward right? 
+
+I﻿ was a sweet summer child before I started this project - soon I found myself hopping between software faster than a kangaroo on coals. Until I had this.
+
+
 
 </p> 
 
@@ -78,5 +103,3 @@ featuredImage: /assets/project_picv4.png
 <p>
 
 </p>
-
-<iframe src="https://d385mfa5ih9aaj.cloudfront.net" width="800" height="750" />
