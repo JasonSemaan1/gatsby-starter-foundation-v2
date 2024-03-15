@@ -68,7 +68,9 @@ G﻿ame plan time - I want to be able to scrape game data, more specifically pla
 
 S﻿ounds pretty straightforward right? 
 
-I﻿ was a sweet summer child before I started this project - soon I found myself hopping between software faster than a kangaroo on coals. Until I had this.
+I﻿ was a sweet summer child before I started this project - soon I found myself hopping between software faster than a kangaroo on coals. Which brings me to my High Level Solution Diagram:
+
+![](/assets/hlsd_kafka_ow2.drawio-7-.png)
 
 </p> 
 
