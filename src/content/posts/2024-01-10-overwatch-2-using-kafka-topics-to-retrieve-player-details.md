@@ -70,8 +70,6 @@ S﻿ounds pretty straightforward right?
 
 I﻿ was a sweet summer child before I started this project - soon I found myself hopping between software faster than a kangaroo on coals. Until I had this.
 
-
-
 </p> 
 
 <!--StartFragment-->
@@ -104,4 +102,4 @@ I﻿ was a sweet summer child before I started this project - soon I found mysel
 
 </p>
 
-<iframe src="https://d385mfa5ih9aaj.cloudfront.net" width="800" height="900" />
+<iframe src="https://d385mfa5ih9aaj.cloudfront.net" width="1200" height="900" />
