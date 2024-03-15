@@ -104,4 +104,4 @@ I﻿ was a sweet summer child before I started this project - soon I found mysel
 
 </p>
 
-<iframe src="https://d385mfa5ih9aaj.cloudfront.net" width="1400" height="900" />
+<iframe src="https://d385mfa5ih9aaj.cloudfront.net" width="1400" height="1200" />
