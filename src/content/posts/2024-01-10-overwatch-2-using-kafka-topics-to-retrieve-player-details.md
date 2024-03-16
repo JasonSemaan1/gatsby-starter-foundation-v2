@@ -22,12 +22,23 @@ featuredImage: /assets/project_picv4.png
 		<!-- Link to section 2: Oh let's break it down! -->
 		<li><a href="#section2">Oh let's break it down!</a></li>
 		<!-- Link to section 3: Wingin' it! -->
-		<li><a href="#section3">Wingin' it!</a></li>
-		<!-- Link to section 4: T﻿roubleshooting from the hip-->
-		<li><a href="#section4">T﻿roubleshooting from the hip</a></li>
-		<!-- Link to section 5: Designing the Dashboard-->
+		<li>
+            <a href="#section3">Wingin' it!</a>
+            <ol>
+                <!-- Subheadings under section 3 -->
+                <li><a href="#section3Sub1">AWS</a></li>
+                <li><a href="#section3Sub2">Docker</a></li>
+                <li><a href="#section3Sub2">Kafka</a></li>
+                <li><a href="#section3Sub2">Streamlit</a></li>
+            </ol>
+        </li>
+		<!-- Link to section 4: Troubleshooting from the hip -->
+		<li><a href="#section4">Troubleshooting from the hip</a></li>
+		<!-- Link to section 5: Designing the Dashboard -->
 		<li><a href="#section5">Designing the Dashboard</a></li>
-	</ol>
+	</ol>            
+
+
 
 <!--StartFragment-->
 
