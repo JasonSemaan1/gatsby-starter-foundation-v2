@@ -28,8 +28,8 @@ featuredImage: /assets/project_picv4.png
                 <!-- Subheadings under section 3 -->
                 <li><a href="#section3Sub1">AWS</a></li>
                 <li><a href="#section3Sub2">Docker</a></li>
-                <li><a href="#section3Sub2">Kafka</a></li>
-                <li><a href="#section3Sub2">Streamlit</a></li>
+                <li><a href="#section3Sub3">Kafka</a></li>
+                <li><a href="#section3Sub4">Streamlit</a></li>
             </ol>
         </li>
 		<!-- Link to section 4: Troubleshooting from the hip -->
@@ -103,11 +103,27 @@ Details for AWS
 
 </p>
 
-<!-- Subheading 3.1 --> <h3 id="section3Sub2">Docker</h3> 
+<!-- Subheading 3.2 --> <h3 id="section3Sub2">Docker</h3> 
 
 <p>
 
 Details for Docker
+
+</p>
+
+<!-- Subheading 3.3 --> <h3 id="section3Sub3">K﻿afka</h3> 
+
+<p>
+
+Details for Kafka
+
+</p>
+
+<!-- Subheading 3.4 --> <h3 id="section3Sub4">S﻿treamlit</h3> 
+
+<p>
+
+Details for S﻿treamlit
 
 </p>
 
