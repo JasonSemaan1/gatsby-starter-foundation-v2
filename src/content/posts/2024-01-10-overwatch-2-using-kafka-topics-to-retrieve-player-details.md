@@ -24,13 +24,13 @@ featuredImage: /assets/project_picv4.png
 		<!-- Link to section 3: Wingin' it! -->
 		<li>
             <a href="#section3">Wingin' it!</a>
-            <ol>
+            <ul>
                 <!-- Subheadings under section 3 -->
                 <li><a href="#section3Sub1">AWS</a></li>
                 <li><a href="#section3Sub2">Docker</a></li>
                 <li><a href="#section3Sub3">Kafka</a></li>
                 <li><a href="#section3Sub4">Streamlit</a></li>
-            </ol>
+            </ul>
         </li>
 		<!-- Link to section 4: Troubleshooting from the hip -->
 		<li><a href="#section4">Troubleshooting from the hip</a></li>
