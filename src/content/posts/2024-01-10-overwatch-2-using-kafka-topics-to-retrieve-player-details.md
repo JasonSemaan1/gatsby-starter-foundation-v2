@@ -38,8 +38,6 @@ featuredImage: /assets/project_picv4.png
 		<li><a href="#section5">Designing the Dashboard</a></li>
 	</ol>            
 
-
-
 <!--StartFragment-->
 
 <!-- Section 1: Reality bends to my will --> 
@@ -97,7 +95,21 @@ M﻿y HLSD seems pretty simple when looking back at it now but the road to it wa
 
 T﻿his was my first project incorporating AWS, Docker, Kafka and Streamlit and some of the learnings I gained for each:
 
-## r﻿gh
+<!-- Subheading 3.1 --> <h3 id="section3Sub1">AWS</h3> 
+
+<p>
+
+Details for AWS
+
+</p>
+
+<!-- Subheading 3.1 --> <h3 id="section3Sub2">Docker</h3> 
+
+<p>
+
+Details for Docker
+
+</p>
 
 </p> 
 
