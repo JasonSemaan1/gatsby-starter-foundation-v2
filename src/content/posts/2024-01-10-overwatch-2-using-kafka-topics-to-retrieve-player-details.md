@@ -21,8 +21,8 @@ featuredImage: /assets/project_picv4.png
 		<li><a href="#section1">Reality bends to my will</a></li>
 		<!-- Link to section 2: Oh let's break it down! -->
 		<li><a href="#section2">Oh let's break it down!</a></li>
-		<!-- Link to section 3: My heads in the clouds -->
-		<li><a href="#section3">My heads in the clouds</a></li>
+		<!-- Link to section 3: Wingin' it! -->
+		<li><a href="#section3">Wingin' it!</a></li>
 		<!-- Link to section 4: T﻿roubleshooting from the hip-->
 		<li><a href="#section4">T﻿roubleshooting from the hip</a></li>
 		<!-- Link to section 5: Designing the Dashboard-->
@@ -39,7 +39,7 @@ featuredImage: /assets/project_picv4.png
 
 Recently two things have been on my mind.
 
-**A﻿t work:** explaining data pipelines to non-technical teams who require support in understanding how to use to achieve their business objectives. Enabled by Kafka (not the Lebanese minced lamb dish).
+**A﻿t work:** explaining data pipelines to non-technical teams who require support in understanding how to use them to achieve their business objectives. Enabled by Kafka (not the Lebanese minced lamb dish).
 
 **N﻿ot at work:** Overwatch 2. Nothing beats after a long day jumping into Discord with your friends to join a 5v5 deathmatch where you fight until your fingers hurt and you need a new keyboard to gloriously...lose?
 
@@ -72,15 +72,21 @@ I﻿ was a sweet summer child before I started this project - soon I found mysel
 
 ![](/assets/hlsd_kafka_ow2.drawio-7-.png)
 
+M﻿y HLSD seems pretty simple when looking back at it now but the road to it was paved with plenty of learnings.
+
 </p> 
 
 <!--StartFragment-->
 
-<!-- Section 3: My heads in the clouds --> 
+<!-- Section 3: Wingin' it! --> 
 
-<h2 id="section3">My heads in the clouds</h2> 
+<h2 id="section3">Wingin' it!</h2> 
 
 <p>
+
+T﻿his was my first project incorporating AWS, Docker, Kafka and Streamlit and some of the learnings I gained for each:
+
+## r﻿gh
 
 </p> 
 
@@ -103,5 +109,3 @@ I﻿ was a sweet summer child before I started this project - soon I found mysel
 <p>
 
 </p>
-
-<iframe src="https://d385mfa5ih9aaj.cloudfront.net" width="1400" height="1200" />
