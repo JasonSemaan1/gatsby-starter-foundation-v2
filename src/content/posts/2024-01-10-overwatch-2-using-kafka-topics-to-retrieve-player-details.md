@@ -18,7 +18,7 @@ featuredImage: /assets/project_picv4.png
 	<h1>Table of Contents</h1>
 	<ol>
 		<!-- Link to section 1: Reality bends to my will! -->
-		<li><a href="#section1">Reality bends to my will</a></li>
+		<li><a href="#section1">Reality bends to my will!</a></li>
 		<!-- Link to section 2: Oh let's break it down! -->
 		<li><a href="#section2">Oh let's break it down!</a></li>
 		<!-- Link to section 3: Wingin' it! -->
@@ -41,7 +41,7 @@ featuredImage: /assets/project_picv4.png
 
 <!-- Section 1: Reality bends to my will --> 
 
-<h2 id="section1">Reality bends to my will</h2> 
+<h2 id="section1">Reality bends to my will!</h2> 
 
 <p>
 
@@ -269,7 +269,7 @@ S﻿hout out to the streamlit docs & chatGPT for helping me navigate the wealth 
 
 <!-- Section 4: No one can hide from my sight --> 
 
-<h2 id="section4">No one can hide from my sight</h2> 
+<h2 id="section4">No one can hide from my sight.</h2> 
 
 <p>
 
