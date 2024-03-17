@@ -17,7 +17,7 @@ featuredImage: /assets/project_picv4.png
 <body>
 	<h1>Table of Contents</h1>
 	<ol>
-		<!-- Link to section 1: Reality bends to my will -->
+		<!-- Link to section 1: Reality bends to my will! -->
 		<li><a href="#section1">Reality bends to my will</a></li>
 		<!-- Link to section 2: Oh let's break it down! -->
 		<li><a href="#section2">Oh let's break it down!</a></li>
@@ -33,10 +33,8 @@ featuredImage: /assets/project_picv4.png
                 <li><a href="#section3Sub4">Streamlit</a></li>
             </ul>
         </li>
-		<!-- Link to section 4: Troubleshooting from the hip -->
-		<li><a href="#section4">Troubleshooting from the hip</a></li>
-		<!-- Link to section 5: Designing the Dashboard -->
-		<li><a href="#section5">Designing the Dashboard</a></li>
+		<!-- Link to section 4: No one can hide from my sight -->
+		<li><a href="#section4">No one can hide from my sight.</a></li>
 	</ol>            
 
 <!--StartFragment-->
@@ -206,8 +204,6 @@ Ahhh Kafka - I had heard the term thrown around at work long enough, now it was 
 KAFKA_HEAP_OPTS: "-Xmx512M -Xms512M"
 ```
 
-
-
 </p>
 
 <!-- Subheading 3.4 --> <h3 id="section3Sub4">S﻿treamlit</h3> 
@@ -261,7 +257,6 @@ def display_stats_horizontally(df, category, subcategories, title):
                     display_subcategory = subcategory_full.replace('_', ' ').capitalize()
                     st.metric(label=display_subcategory, value="N/A")
                     # If there's no data available for a subcategory, it displays "N/A" as the value.
-
 ```
 
 S﻿hout out to the streamlit docs & chatGPT for helping me navigate the wealth of formatting options.
@@ -272,21 +267,15 @@ S﻿hout out to the streamlit docs & chatGPT for helping me navigate the wealth 
 
 <!--StartFragment-->
 
-<!-- Section 4: T﻿roubleshooting from the hip --> 
+<!-- Section 4: No one can hide from my sight --> 
 
-<h2 id="section3">T﻿roubleshooting from the hip</h2> 
-
-<p>
-
-</p> 
-
-<!--StartFragment-->
-
-<!-- Section 5: Designing the Dashboard --> 
-
-<h2 id="section5">Designing the Dashboard</h2> 
+<h2 id="section4">No one can hide from my sight</h2> 
 
 <p>
+
+I﻿f you've made it this far thanks for checking out this little project.
+
+W﻿ithout further ado, here is [my dashboard](http://ec2-3-25-135-208.ap-southeast-2.compute.amazonaws.com:8501/) available below - some usernames to test include UBLINKED-11828 or Spaztek-1732:
 
 <iframe src="https://d385mfa5ih9aaj.cloudfront.net" height="1200" width="100%" style="border:none;"></iframe>
 
