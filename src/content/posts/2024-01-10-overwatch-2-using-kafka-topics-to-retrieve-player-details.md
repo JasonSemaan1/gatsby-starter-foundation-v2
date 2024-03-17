@@ -111,13 +111,58 @@ I﻿t was also my first time deploying Zookeeper & Kafka and I learnt that Kafka
 
 ![](/assets/local_deployment_overview.drawio-1-.png)
 
+L﻿ocal deployment was a success - it was now time to get my head in the cloud.
+
 </p>
 
 <!-- Subheading 3.1 --> <h3 id="section3Sub1">AWS</h3> 
 
 <p>
 
-Details for AWS
+I﻿ had to learn a lot about AWS - I started by googling how to spin up a virtual machine 24/7 through AWS and learnt that ec2 was the way to go. I was eligible for AWS' free tier so could use a t2.micro with 30gbs of storage for next to no cost. Next was security groups, where I had to create configurations that would allow different systems to send traffic to, from and within each other within my ec2 instance. I knew I had to open ports for the following:
+
+* **s﻿sh** to allow for remote access of my ec2
+* **z﻿ookeeper** to support in managing my kafka deployment
+* **k﻿afka** so it could receive incoming json payloads
+* **s﻿treamlit** to allow anyone access to input battletags and search
+
+O﻿nce my ec2 was up and running I had to learn how to ssh into it from my local machine to upload my python scripts and begin installing zookeeper, kafka and Docker.
+
+I﻿ also learnt about using .pem files that would allow for securely ssh'ing in by first navigating to the file path location containing my .pem before being granted access.
+
+W﻿ith my ec2 now up and running I ssh'ed in and began transferring files and installing the necessary software.
+
+```shell
+#navigate to my .pem file
+cd "C:\path\to\my\pem\dashboard.pem"
+
+#ssh into my ec2
+ssh -i dashboard.pem ec2-user@my-instance-public-dns
+
+#xfer files from local to ec2
+scp -i "C:\path\to\my\pem\dashboard.pem" "C:\path\to\my\local\files\aws_python_scripts" ec2-user@my-instance-public-dns:/home/ec2-user/
+
+#if i need to download copies of files if changes have been made in ec2
+scp -r -i "C:\path\to\my\pem\dashboard.pem" ec2-user@my-instance-public-dns:/home/ec2-user/ "C:\path\to\my\local\files\aws_python_scripts"
+
+#ensure ec2 package repo is updated
+sudo yum update -y
+
+#install java
+sudo yum install java-1.8.0-openjdk -y
+
+#get kafka
+wget https://archive.apache.org/dist/kafka/2.13-3.1.0/kafka_2.13-3.1.0.tgz
+#extract latest kafka
+tar -xzf kafka_2.13-3.1.0.tgz
+
+#install python
+sudo yum install python3
+```
+
+H﻿owever as I started to install all of these I was quickly realising that all of these libraries and softwares could be tricky if I had to deal with different dependencies across them. I had learnt at work that python venvs were best practice to avoid conflicts but I was starting to think I wanted each contributing service to have its own containerised instance where they could interact with each other.
+
+T﻿his brought me to...
 
 </p>
 
@@ -125,7 +170,9 @@ Details for AWS
 
 <p>
 
-Details for Docker
+![](/assets/docker_cert.png)
+
+Where would I be without [Fireship](https://www.youtube.com/watch?v=rIrNIzy6U_g)? This video was a great help when I started on the Docker journey.
 
 </p>
 
@@ -165,6 +212,6 @@ Details for S﻿treamlit
 
 <p>
 
-<iframe src="https://d385mfa5ih9aaj.cloudfront.net" width="1400" height="1200" />
+
 
 </p>
