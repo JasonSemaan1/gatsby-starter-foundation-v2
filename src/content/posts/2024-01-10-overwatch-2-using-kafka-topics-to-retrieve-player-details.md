@@ -172,7 +172,26 @@ T﻿his brought me to...
 
 ![](/assets/docker_cert.png)
 
-Where would I be without [Fireship](https://www.youtube.com/watch?v=rIrNIzy6U_g)? This video was a great help when I started on the Docker journey.
+Where would I be without [Fireship](https://www.youtube.com/watch?v=rIrNIzy6U_g)? This video was a great help when I started on the Docker journey and soon enough I was installing docker & docker-compose to setup my 3 separate Docker images.
+
+![](/assets/docker_images.drawio.png)
+
+Z﻿ookeeper ensures Kafka runs smoothly, Kafka receives events from Python producer script after calling Overfast API, then another Python script consumes json, converts to csv and uses it to display dashboard results.
+
+T﻿o assist with the setup of these docker images I learnt about two key concepts:
+
+* **D﻿ockerfile:** The blueprint that defines how each docker image should be setup at the time of creation.
+* **d﻿ocker-compose.yaml:** If Dockerfile is the blueprint, docker-compose.yaml is the foreman that ensures the blueprints are followed. 
+
+W﻿ith all of my instructions setup I just had to say the word: 
+
+```dockerfile
+#invokes docker-compose.yaml file contents to build images then start them. 
+#creates in detached mode so can return to terminal after all setup
+docker-compose up --build -d
+```
+
+![](/assets/whale_foreman.png)
 
 </p>
 
@@ -180,7 +199,14 @@ Where would I be without [Fireship](https://www.youtube.com/watch?v=rIrNIzy6U_g)
 
 <p>
 
-Details for Kafka
+Ahhh Kafka - I had heard the term thrown around at work long enough, now it was time to get first hand experience. Allowing real-time data streaming, I learnt that in order to get Kafka to work within my low-spec virtual machine I had to explicitly limit the memory Kafka used in my docker-compose.yaml file or else I'd receive errors:
+
+```dockerfile
+#explictly limiting kafka memory to 512mbs
+KAFKA_HEAP_OPTS: "-Xmx512M -Xms512M"
+```
+
+
 
 </p>
 
@@ -188,7 +214,57 @@ Details for Kafka
 
 <p>
 
-Details for S﻿treamlit
+S﻿treamlit is a cool library allowing for the creation of dashboards written exclusively within Python. I had to learn a number of commands to format how the data was presented.
+
+```python
+def display_stats_horizontally(df, category, subcategories, title):
+    # Display a subheader in the Streamlit app with the provided title.
+    st.subheader(title)
+    
+    
+    # Filter the dataframe for the specific category
+    filtered_df = df[df['Category'].str.lower() == category.lower()]
+    
+    # Prepare columns for each subcategory
+    # Define the max number of metrics you want to display per row
+    metrics_per_row = max(len(subcategories), 6)  # for example, if you want max 6 metrics per row
+    columns = st.columns(metrics_per_row)
+    # This sets up a variable `metrics_per_row` to determine the maximum number of metrics (subcategories) to display per row, with a fallback maximum of 6. It then creates that many columns in Streamlit.
+    
+    # Pad the subcategories list to match the metrics_per_row if it's not already equal
+    subcategories_padded = subcategories + [''] * (metrics_per_row - len(subcategories))
+    # If there are fewer subcategories than `metrics_per_row`, this line pads the list with empty strings to match the expected number of columns.
+    
+    for i, subcategory_full in enumerate(subcategories_padded):
+        if subcategory_full:  # Skip if this is just a padding empty string
+            with columns[i % metrics_per_row]:
+                # Iterates through each subcategory, using each one to configure and display a metric in one of the columns. It skips the iteration if the subcategory is an empty string (used for padding).
+                
+                # Change the display label for time played
+                display_label = "Time Played (hours)" if subcategory_full == "time_played" else subcategory_full.replace('_', ' ').capitalize()
+                # Sets a more readable display label for each metric. Specifically, it replaces underscores with spaces, capitalizes the label, and handles a special case for "time_played".
+                
+                # Extract the specific row for the subcategory
+                specific_row = filtered_df[filtered_df['Subcategory'].str.lower() == subcategory_full.lower()]
+                if not specific_row.empty:
+                    # Retrieve the value, format it, and display
+                    value = specific_row['Value'].iloc[0]
+                    formatted_value = format_number(value) if pd.api.types.is_number(value) else str(value)
+                    # Retrieves and formats the value for the subcategory from the filtered DataFrame. If the value is a number, it formats it using a custom `format_number` function; otherwise, it converts it to a string.
+                    
+                    # Replace underscores with spaces and capitalize for display
+                    display_subcategory = subcategory_full.replace('_', ' ').capitalize()
+                    st.metric(label=display_label, value=formatted_value)
+                    # Displays the metric with the formatted label and value in the Streamlit app.
+                else:
+                    # If no data is found for the subcategory, display N/A
+                    display_subcategory = subcategory_full.replace('_', ' ').capitalize()
+                    st.metric(label=display_subcategory, value="N/A")
+                    # If there's no data available for a subcategory, it displays "N/A" as the value.
+
+```
+
+S﻿hout out to the streamlit docs & chatGPT for helping me navigate the wealth of formatting options.
 
 </p>
 
@@ -212,6 +288,6 @@ Details for S﻿treamlit
 
 <p>
 
-
+<iframe src="https://d385mfa5ih9aaj.cloudfront.net" height="1200" width="100%" style="border:none;"></iframe>
 
 </p>
