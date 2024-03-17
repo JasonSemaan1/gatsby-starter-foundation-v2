@@ -26,6 +26,7 @@ featuredImage: /assets/project_picv4.png
             <a href="#section3">Wingin' it!</a>
             <ul>
                 <!-- Subheadings under section 3 -->
+                <li><a href="#section3Sub0">Local Deployment</a></li>
                 <li><a href="#section3Sub1">AWS</a></li>
                 <li><a href="#section3Sub2">Docker</a></li>
                 <li><a href="#section3Sub3">Kafka</a></li>
@@ -79,7 +80,7 @@ S﻿ounds pretty straightforward right?
 
 I﻿ was a sweet summer child before I started this project - soon I found myself hopping between software faster than a kangaroo on coals. Which brings me to my High Level Solution Diagram:
 
-![](/assets/hlsd_kafka_ow2.drawio-7-.png)
+![](/assets/hlsd_kafka_ow2.drawio-8-.png)
 
 M﻿y HLSD seems pretty simple when looking back at it now but the road to it was paved with plenty of learnings.
 
@@ -94,6 +95,23 @@ M﻿y HLSD seems pretty simple when looking back at it now but the road to it wa
 <p>
 
 T﻿his was my first project incorporating AWS, Docker, Kafka and Streamlit and some of the learnings I gained for each:
+
+<!-- Subheading 3.1 --> <h3 id="section3Sub0">Local Deployment</h3> 
+
+<p>
+
+Before jumping into the cloud I wanted to test the underlying components of Python facilitating the hops between systems on my local Windows machine. My scripts had to:
+
+1. A﻿ct as a producer by calling an API
+2. P﻿ass it to a Kafka Topic
+3. C﻿onvert json to csv 
+4. H﻿ave streamlit script read csv and format as required
+
+I﻿t was also my first time deploying Zookeeper & Kafka and I learnt that Kafka on Windows requires shortened file paths. Multiple installation errors of trying to locate dependent files taught me this the hard way. I created a flowchart detailing each of the commands to run & what each command was doing while also documenting learnings along the way.
+
+![](/assets/local_deployment_overview.drawio-1-.png)
+
+</p>
 
 <!-- Subheading 3.1 --> <h3 id="section3Sub1">AWS</h3> 
 
