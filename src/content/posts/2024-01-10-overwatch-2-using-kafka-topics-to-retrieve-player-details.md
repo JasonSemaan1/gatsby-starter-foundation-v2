@@ -273,10 +273,17 @@ S﻿hout out to the streamlit docs & chatGPT for helping me navigate the wealth 
 
 <p>
 
-I﻿f you've made it this far thanks for checking out this little project.
+T﻿o sum up, my key learnings include:
 
-W﻿ithout further ado, here is [my dashboard](http://ec2-3-25-135-208.ap-southeast-2.compute.amazonaws.com:8501/) available below - some usernames to test include UBLINKED-11828 or Spaztek-1732:
+* How to create a virtual instance in the cloud to keep my app up 24/7
+* T﻿he power of Docker as an orchestration method to keep instances with different functions separate
+* U﻿sing Kafka to create real-time data processing
+* U﻿se of the streamlit library to create user-friendly dashboards
+
+W﻿ithout further ado, here is the culmination of my learnings - [my dashboard](http://ec2-3-25-135-208.ap-southeast-2.compute.amazonaws.com:8501/) available below. Some usernames to test include UBLINKED-11828 or Spaztek-1732:
 
 <iframe src="https://d385mfa5ih9aaj.cloudfront.net" height="1200" width="100%" style="border:none;"></iframe>
+
+T﻿hanks for checking out my project!
 
 </p>
