@@ -69,7 +69,7 @@ A﻿ll normal thoughts when in the love/hate relationship that is Overwatch 2. A
 
 G﻿ame plan time - I want to be able to scrape game data, more specifically player stats and then display them in a visually friendly way to review how I've done. Breaking it down into steps I would need to:
 
-1. **Identify a source of game performance metrics:** A big shout toValentin "TeKrop" PORCHET for creating the [OverFast API](https://overfast-api.tekrop.fr/) which scrapes data from official Blizzard pages to obtain the data suitable to power my experiment.
+1. **Identify a source of game performance metrics:** A big shout to Valentin "TeKrop" PORCHET for creating the [OverFast API](https://overfast-api.tekrop.fr/) which scrapes data from official Blizzard pages to obtain the data suitable to power my experiment.
 2. F﻿ind a suitable tech stack that will enable me to run a Kafka cluster to stream data from the API call to my reporting solution
 3. Assess a reporting solution that can ingest from the Kafka topic and display the necessary visualisations
 4. H﻿ost this dashboard somewhere and allow users to input any player name to retrieve their performance
@@ -78,7 +78,7 @@ S﻿ounds pretty straightforward right?
 
 I﻿ was a sweet summer child before I started this project - soon I found myself hopping between software faster than a kangaroo on coals. Which brings me to my High Level Solution Diagram:
 
-![](/assets/hlsd_kafka_ow2.drawio-8-.png)
+![](/assets/hlsd_kafka_ow2.drawio-9-.png)
 
 M﻿y HLSD seems pretty simple when looking back at it now but the road to it was paved with plenty of learnings.
 
@@ -119,7 +119,7 @@ L﻿ocal deployment was a success - it was now time to get my head in the cloud.
 
 I﻿ had to learn a lot about AWS - I started by googling how to spin up a virtual machine 24/7 through AWS and learnt that ec2 was the way to go. I was eligible for AWS' free tier so could use a t2.micro with 30gbs of storage for next to no cost. Next was security groups, where I had to create configurations that would allow different systems to send traffic to, from and within each other within my ec2 instance. I knew I had to open ports for the following:
 
-* **s﻿sh** to allow for remote access of my ec2
+* **secure shell (s﻿sh)** to allow for remote access of my ec2
 * **z﻿ookeeper** to support in managing my kafka deployment
 * **k﻿afka** so it could receive incoming json payloads
 * **s﻿treamlit** to allow anyone access to input battletags and search
@@ -259,7 +259,7 @@ def display_stats_horizontally(df, category, subcategories, title):
                     # If there's no data available for a subcategory, it displays "N/A" as the value.
 ```
 
-S﻿hout out to the streamlit docs & chatGPT for helping me navigate the wealth of formatting options.
+S﻿hout out to the [streamlit docs](https://docs.streamlit.io/) & chatGPT for helping me navigate the wealth of formatting options.
 
 </p>
 
@@ -277,7 +277,7 @@ T﻿o sum up, my key learnings include:
 
 * How to create a virtual instance in the cloud to keep my app up 24/7
 * T﻿he power of Docker as an orchestration method to keep instances with different functions separate
-* U﻿sing Kafka to create real-time data processing
+* U﻿sing Kafka to create real-time data streaming
 * U﻿se of the streamlit library to create user-friendly dashboards
 
 W﻿ithout further ado, here is the culmination of my learnings - [my dashboard](http://ec2-3-25-135-208.ap-southeast-2.compute.amazonaws.com:8501/) available below. Some usernames to test include UBLINKED-11828 or Spaztek-1732:
