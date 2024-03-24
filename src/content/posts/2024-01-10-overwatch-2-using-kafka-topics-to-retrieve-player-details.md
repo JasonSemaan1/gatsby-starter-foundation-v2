@@ -282,6 +282,10 @@ T﻿o sum up, my key learnings include:
 
 W﻿ithout further ado, here is the culmination of my learnings - [my dashboard](http://ec2-3-25-135-208.ap-southeast-2.compute.amazonaws.com:8501/) available below. Some usernames to test include UBLINKED-11828 or Spaztek-1732:
 
+2﻿4/03/2024: As my AWS free tier has expired I've included a screenshot of the final dashboard.
+
+![](/assets/final_dashboard_output.png)
+
 <iframe src="https://d385mfa5ih9aaj.cloudfront.net" height="1200" width="150%" style="border:none;"></iframe>
 
 T﻿hanks for checking out my project!
