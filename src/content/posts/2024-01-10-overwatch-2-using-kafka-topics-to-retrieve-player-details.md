@@ -286,8 +286,6 @@ W﻿ithout further ado, here is the culmination of my learnings - [my dashboard]
 
 ![](/assets/final_dashboard_output.png)
 
-<iframe src="https://d385mfa5ih9aaj.cloudfront.net" height="1200" width="150%" style="border:none;"></iframe>
-
 T﻿hanks for checking out my project!
 
 </p>
