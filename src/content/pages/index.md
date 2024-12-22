@@ -3,7 +3,7 @@ template: index-page
 slug: /
 title: Hi, I’m Jason and I like turning 📈 into 💎
 tagline: “Sometimes I VLOOKUP at the *s and find a scatterplot staring back at me.”
-featuredImage: /assets/linkedin-cover-photo.png
+featuredImage: /assets/comfyui_00035_.png
 cta:
   ctaText: Know more
   ctaLink: /about
