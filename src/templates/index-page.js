@@ -39,7 +39,12 @@ export const pageQuery = graphql`
         tagline
         featuredImage {
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED, width: 585, height: 439)
+            gatsbyImageData(
+              layout: CONSTRAINED
+              width: 585
+              height: 439
+              quality: 100
+            )
           }
         }
         cta {
@@ -63,7 +68,12 @@ export const pageQuery = graphql`
             title
             featuredImage {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, width: 345, height: 260)
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  width: 345
+                  height: 260
+                  quality: 100
+                )
               }
             }
           }
@@ -103,7 +113,7 @@ const HomePage = ({ data }) => {
         ) : (
           ""
         )}
-         {icons.icon === "python" ? (
+        {icons.icon === "python" ? (
           <Link to={icons.url} target="_blank">
             <DiPython />
           </Link>
