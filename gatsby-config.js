@@ -30,7 +30,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          quality: 100,
+        },
+        defaultQuality: 100,
+      },
+    },
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
@@ -46,6 +54,7 @@ module.exports = {
               linkImagesToOriginal: false,
               tracedSVG: true,
               loading: "lazy",
+              quality: 100,
             },
           },
           {
