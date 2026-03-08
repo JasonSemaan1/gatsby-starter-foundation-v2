@@ -47,7 +47,7 @@ M﻿y first step was to find an idea that would provide a simple enough use case
 
 ![](/assets/origin_of_idea_v2.png)
 
-W﻿ith my above-head-lightbulb at full brightness, I unpacked stiff's comment focusing on the Scrabble aspect. I extracted requirements I wanted to solve for:
+W﻿ith my above-head-lightbulb at full brightness, I unpacked SUL's comment focusing on the Scrabble aspect. I extracted requirements I wanted to solve for:
 
 1. A﻿ column with all words approved as per Scrabble guidelines ([thanks StackOverflow!](https://boardgames.stackexchange.com/questions/38366/latest-collins-scrabble-words-list-in-text-file))
 2. A﻿ column with each words' score value (Excel to the rescue!)
@@ -55,6 +55,8 @@ W﻿ith my above-head-lightbulb at full brightness, I unpacked stiff's comment f
 4. A﻿ front-end method of capturing inputs, passing this to the database and returning it in a visually appealing way.
 
 A﻿fter documenting all of my requirements I realised I was going to need a pipeline.
+
+U﻿PDATE 2026/03/27: Through the power of the internet the original reddit poster found my website and introduced himself - thanks again for the inspiring post Mr. Pocock!
 
 </p> 
 
